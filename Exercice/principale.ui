@@ -1,0 +1,1568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Principale</class>
+ <widget class="QMainWindow" name="Principale">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1262</width>
+    <height>922</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Gestion des achats des marchandises</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*background-image: url('C:/Users/FANOMEZANTSOA Ordino/Pictures/laptop-near-tag-tablet-supermarket-cart-photo-frame.jpg');*/
+/*background-color:rgb(46,44,44);*/
+background-color: rgb(82,82,82);
+color:white;</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>170</y>
+      <width>1261</width>
+      <height>691</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*background-image: url('C:/Users/FANOMEZANTSOA Ordino/Pictures/Capture4 (3).PNG');*/
+background_color:rgb(46,44,44);
+font: 63 11pt &quot;Yu Gothic UI Semibold&quot;;
+color:black;</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Fournisseurs</string>
+     </attribute>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>150</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/*font: 63 10pt &quot;Yu Gothic UI Semibold&quot;;*/
+font: 10pt &quot;Yu Gothic UI Semilight&quot;;
+color:white;
+</string>
+      </property>
+      <property name="text">
+       <string>Ajouter nouveau</string>
+      </property>
+     </widget>
+     <widget class="QTableView" name="tableView">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>911</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(179,177,177);
+color:black;
+border-radius:5px;
+font: 63 11pt &quot;Yu Gothic UI Semibold&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>300</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(214,42,42);
+border-radius:6px;</string>
+      </property>
+      <property name="text">
+       <string>Supprimer</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_17">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>590</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;</string>
+      </property>
+      <property name="text">
+       <string>Actualiser</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_18_supp_tous_fourn">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>460</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:grey;
+border-radius:6px;</string>
+      </property>
+      <property name="text">
+       <string>Supprimer tous</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_titre_fourn">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;
+font: 63 25pt &quot;Agency FB&quot;;
+background-color: rgb(82,82,82);</string>
+      </property>
+      <property name="text">
+       <string>Liste des fournisseurs </string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_recherche">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>30</y>
+        <width>271</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:20px;
+color:white;
+background-color:rgb(44,44,44);
+border:1px ridge rgb(107,105,105);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="recherche_fourn">
+      <property name="geometry">
+       <rect>
+        <x>790</x>
+        <y>30</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;</string>
+      </property>
+      <property name="text">
+       <string>Rechercher</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="modifi_fournisseur">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>30</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;</string>
+      </property>
+      <property name="text">
+       <string>Modifier</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_rech_refference">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>590</y>
+        <width>191</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;</string>
+      </property>
+      <property name="text">
+       <string>Recherche par refference</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_2_rech_NIF">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>620</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;</string>
+      </property>
+      <property name="text">
+       <string>Recherche par N.I.F</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>970</x>
+        <y>100</y>
+        <width>241</width>
+        <height>451</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(82,82,82);
+border-radius:20px;
+border:1px ridge rgb(88,88,88);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="couche1">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>911</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(82,82,82);
+border-radius:5px;
+border:1px ridge rgb(88,88,88);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Marchandises</string>
+     </attribute>
+     <widget class="QTableView" name="tableView_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>911</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(179,177,177);
+color:black;
+border-radius:10px;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>150</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 10pt &quot;Yu Gothic UI Semibold&quot;;
+background-color:rgb(9,94,9);
+border-radius:6px;
+border:1px solid black;
+</string>
+      </property>
+      <property name="text">
+       <string>Ajouter nouveau</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>300</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(214,42,42);
+border-radius:6px;</string>
+      </property>
+      <property name="text">
+       <string>Supprimer</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="actualisation_marchandise">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>590</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;
+font: 63 11pt &quot;Yu Gothic UI Semibold&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Actualiser</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="supp_marchandise">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>460</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:grey;
+border-radius:6px;</string>
+      </property>
+      <property name="text">
+       <string>Supprimer tous</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;
+font: 63 25pt &quot;Agency FB&quot;;
+background-color: rgb(82,82,82);</string>
+      </property>
+      <property name="text">
+       <string>Liste des marchandises</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="recher_march">
+      <property name="geometry">
+       <rect>
+        <x>790</x>
+        <y>30</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;
+font: 63 11pt &quot;Yu Gothic UI Semibold&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Rechercher</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_rech_march">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>30</y>
+        <width>271</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:20px;
+font: 63 11pt &quot;Yu Gothic UI Semibold&quot;;
+color:white;
+background-color:rgb(70,67,67);
+border:1px ridge rgb(53,53,53);</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="modifi_march">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>30</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;
+font: 63 11pt &quot;Yu Gothic UI Semibold&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Modifier</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>970</x>
+        <y>100</y>
+        <width>241</width>
+        <height>451</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(82,82,82);
+border-radius:20px;
+border:1px ridge rgb(88,88,88);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="couche1_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>911</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(82,82,82);
+border-radius:5px;
+border:1px ridge rgb(88,88,88);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Entrepots</string>
+     </attribute>
+     <widget class="QTableView" name="tableView_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>911</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(179,177,177);
+color:black;
+border-radius:10px;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_7">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>150</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 10pt &quot;Yu Gothic UI Semibold&quot;;
+background-color:rgb(9,94,9);
+border-radius:6px;
+border:1px solid black;
+</string>
+      </property>
+      <property name="text">
+       <string>Ajouter nouveau</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_9">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>300</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(214,42,42);
+border-radius:6px;</string>
+      </property>
+      <property name="text">
+       <string>Supprimer</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="actual_entrepot">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>590</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;
+font: 63 11pt &quot;Yu Gothic UI Semibold&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>Actualiser</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="supp_entrepot">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>460</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:grey;
+border-radius:6px;</string>
+      </property>
+      <property name="text">
+       <string>Supprimer tous</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_2_rechercher_entrepot">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>30</y>
+        <width>271</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:20px;
+font: 63 11pt &quot;Yu Gothic UI Semibold&quot;;
+color:white;
+background-color:rgb(70,67,67);
+border:1px ridge rgb(53,53,53);</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>211</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;
+font: 63 25pt &quot;Agency FB&quot;;
+background-color: rgb(82,82,82);</string>
+      </property>
+      <property name="text">
+       <string>Liste des entrepots</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="rechercher_entrepot">
+      <property name="geometry">
+       <rect>
+        <x>790</x>
+        <y>30</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;
+font: 63 11pt &quot;Yu Gothic UI Semibold&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>Rechercher</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="modifi_entrepot">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>30</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;
+font: 63 11pt &quot;Yu Gothic UI Semibold&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Modifier</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>970</x>
+        <y>100</y>
+        <width>241</width>
+        <height>451</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(82,82,82);
+border-radius:20px;
+border:1px ridge rgb(88,88,88);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="couche1_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>911</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(82,82,82);
+border-radius:5px;
+border:1px ridge rgb(88,88,88);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>Livrer</string>
+     </attribute>
+     <widget class="QPushButton" name="pushButton_10">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>150</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 10pt &quot;Yu Gothic UI Semibold&quot;;
+background-color:rgb(9,94,9);
+border-radius:6px;
+border:1px solid black;
+</string>
+      </property>
+      <property name="text">
+       <string>Ajouter nouveau</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_12">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>300</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(214,42,42);
+border-radius:6px;</string>
+      </property>
+      <property name="text">
+       <string>Supprimer</string>
+      </property>
+     </widget>
+     <widget class="QTableView" name="tableView_4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>911</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(179,177,177);
+color:black;
+border-radius:10px;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="actual_livrer">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>590</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;
+font: 63 11pt &quot;Yu Gothic UI Semibold&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Actualiser</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="supp_livrer">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>460</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:grey;
+border-radius:6px;</string>
+      </property>
+      <property name="text">
+       <string>Supprimer tous</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="recherche_livrer">
+      <property name="geometry">
+       <rect>
+        <x>790</x>
+        <y>30</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;
+font: 63 11pt &quot;Yu Gothic UI Semibold&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>Rechercher</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>221</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;
+font: 63 25pt &quot;Agency FB&quot;;
+background-color: rgb(82,82,82);</string>
+      </property>
+      <property name="text">
+       <string>Liste des  livraisons</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_3_rechercher_livrer">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>30</y>
+        <width>271</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:20px;
+font: 63 11pt &quot;Yu Gothic UI Semibold&quot;;
+color:white;
+background-color:rgb(70,67,67);
+border:1px ridge rgb(53,53,53);</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="modifi_livrer">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>30</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;
+font: 63 11pt &quot;Yu Gothic UI Semibold&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Modifier</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>970</x>
+        <y>100</y>
+        <width>241</width>
+        <height>451</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(82,82,82);
+border-radius:20px;
+border:1px ridge rgb(88,88,88);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="couche1_4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>911</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(82,82,82);
+border-radius:5px;
+border:1px ridge rgb(88,88,88);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_5">
+     <attribute name="title">
+      <string>Stocker</string>
+     </attribute>
+     <widget class="QTableView" name="tableView_5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>911</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(179,177,177);
+color:black;
+border-radius:10px;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_13">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>150</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 10pt &quot;Yu Gothic UI Semibold&quot;;
+background-color:rgb(9,94,9);
+border-radius:6px;
+border:1px solid black;
+</string>
+      </property>
+      <property name="text">
+       <string>Ajouter nouveau</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_15">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>300</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(214,42,42);
+border-radius:6px;</string>
+      </property>
+      <property name="text">
+       <string>Supprimer</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="stock_actualiser">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>590</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;
+font: 63 11pt &quot;Yu Gothic UI Semibold&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Actualiser</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="supp_stocker">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>460</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:grey;
+border-radius:6px;</string>
+      </property>
+      <property name="text">
+       <string>Supprimer tous</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_4_recherche_stocker">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>30</y>
+        <width>271</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:20px;
+font: 63 11pt &quot;Yu Gothic UI Semibold&quot;;
+color:white;
+background-color:rgb(70,67,67);
+border:1px ridge rgb(53,53,53);</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>231</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;
+font: 63 25pt &quot;Agency FB&quot;;
+background-color: rgb(82,82,82);</string>
+      </property>
+      <property name="text">
+       <string>Liste des stockages</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="rechercher_stocker">
+      <property name="geometry">
+       <rect>
+        <x>790</x>
+        <y>30</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;
+font: 63 11pt &quot;Yu Gothic UI Semibold&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>Rechercher</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="modifi_stock">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>30</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;
+font: 63 11pt &quot;Yu Gothic UI Semibold&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Modifier</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>970</x>
+        <y>100</y>
+        <width>241</width>
+        <height>451</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(82,82,82);
+border-radius:20px;
+border:1px ridge rgb(88,88,88);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="couche1_5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>911</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(82,82,82);
+border-radius:5px;
+border:1px ridge rgb(88,88,88);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_6">
+     <attribute name="title">
+      <string>Bon des livraisons</string>
+     </attribute>
+     <widget class="QTableView" name="tableView_6">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>911</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(179,177,177);
+color:black;
+border-radius:10px;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="actual_bon_livraison">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>590</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 11pt &quot;Yu Gothic UI Semibold&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Actualiser</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_5_recherche_bon_livraison">
+      <property name="geometry">
+       <rect>
+        <x>790</x>
+        <y>30</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Rechercher</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_recherche_bon_livraison">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>30</y>
+        <width>271</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:20px;
+color:white;
+background-color:rgb(70,67,67);
+border:1px ridge rgb(53,53,53);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>231</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;
+font: 63 25pt &quot;Agency FB&quot;;
+background-color: rgb(82,82,82);
+</string>
+      </property>
+      <property name="text">
+       <string>Les bons de livraison :</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_rechBon_par_Raison">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>590</y>
+        <width>221</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: white;
+font: 63 11pt 'Yu Gothic UI Semibold';</string>
+      </property>
+      <property name="text">
+       <string>Recherche par Raison sociale</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_2_rechBon_par_design">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>620</y>
+        <width>211</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: white;
+font: 63 11pt 'Yu Gothic UI Semibold';</string>
+      </property>
+      <property name="text">
+       <string>Recherche par designation</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="couche1_6">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>911</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(82,82,82);
+border-radius:5px;
+border:1px ridge rgb(88,88,88);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_7">
+     <attribute name="title">
+      <string>Marchandises livrées</string>
+     </attribute>
+     <widget class="QTableView" name="tableView_7">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>101</y>
+        <width>911</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(179,177,177);
+color:black;
+border-radius:10px;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_recherche_march_livree">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>30</y>
+        <width>271</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:20px;
+color:white;
+background-color:rgb(70,67,67);
+border:1px ridge rgb(53,53,53);</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_5_march_livr">
+      <property name="geometry">
+       <rect>
+        <x>790</x>
+        <y>30</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 11pt &quot;Yu Gothic UI Semibold&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Rechercher</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_5_actualisation_march_liv">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>590</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actualiser</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>341</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;
+font: 63 25pt &quot;Agency FB&quot;;
+background-color: rgb(82,82,82);</string>
+      </property>
+      <property name="text">
+       <string>Listes des marchandises livrées :</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_rechMarLivr_par_reffer">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>590</y>
+        <width>231</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 11pt 'Yu Gothic UI Semibold';
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>Recherche par refference </string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_2_rechMarLivr_par_design">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>620</y>
+        <width>201</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 11pt 'Yu Gothic UI Semibold';
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>Recherche par designation</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="couche1_8">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>911</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(82,82,82);
+border-radius:5px;
+border:1px ridge rgb(88,88,88);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_8">
+     <attribute name="title">
+      <string>Inventaire</string>
+     </attribute>
+     <widget class="QTableView" name="tableView_8">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>911</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(179,177,177);
+color:black;
+border-radius:10px;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="recherche_inventaire">
+      <property name="geometry">
+       <rect>
+        <x>790</x>
+        <y>30</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rechercher</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_recherche_invent">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>30</y>
+        <width>271</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:20px;
+color:white;
+background-color:rgb(70,67,67);
+border:1px ridge rgb(53,53,53);</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="actualise_inventaire">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>590</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actualiser</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;
+font: 63 25pt &quot;Agency FB&quot;;
+background-color: rgb(82,82,82);</string>
+      </property>
+      <property name="text">
+       <string>Inventaire :</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_rechInven_par_reffer">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>590</y>
+        <width>201</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 11pt 'Yu Gothic UI Semibold';
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>Recherche par refference</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_2_rechInvent_par_design">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>620</y>
+        <width>211</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 11pt 'Yu Gothic UI Semibold';
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>Recherche par designation</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="couche1_7">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>911</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(82,82,82);
+border-radius:5px;
+border:1px ridge rgb(88,88,88);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="titre">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>10</y>
+      <width>841</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 32pt 'Agency FB';</string>
+    </property>
+    <property name="text">
+     <string>GESTION DES ACHATS DES MARCHANDISES</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="logo">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>151</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="logo1">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>10</y>
+      <width>151</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1262</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFournisseurs">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="actionAfficher"/>
+   </widget>
+   <widget class="QMenu" name="menuAide">
+    <property name="title">
+     <string>Aide ?</string>
+    </property>
+    <addaction name="actionA_props_du_logiciel"/>
+   </widget>
+   <addaction name="menuFournisseurs"/>
+   <addaction name="menuAide"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionAfficher">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionA_props_du_logiciel">
+   <property name="text">
+    <string>A props du logiciel</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
